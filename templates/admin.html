@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raxbarlar</title>
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #sotset{
+        width: 20%;
+        float: right;
+      }
+      #sotset >a >img{
+        width: 90%;
+        margin-left: 10%;
+      }
+        #name{
+            font-size: 25px;
+        }
+        .name{
+            font-size: 19px;
+
+        }
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #imgadmin{
+            width: 20%;
+        }
+        @media screen and (max-width: 600px){
+
+            *{
+                font-size: 10px;
+            }
+            #name{
+                font-size:13px;
+            }
+            .container{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .name{
+                font-size: 13px;
+            }
+            #imgadmin{
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html'%}
+    <div style="margin-bottom: 100px;" class="container">
+        <div style="margin-top: 10px;height: auto;display: flex;padding: 5px;">
+            <div id="imgadmin">
+                <img src="{% static 'img/umid.jpg'%}" alt="" style="width: 100%;">
+            </div>
+            <div style="width:60%; margin-left: 10%;text-align: center;">
+            <b id="name">Kollej direktori</b><br>
+            <b class="name"><i>Xakimov Umedjan Bahadirovich</i></b><br>
+            <i>Pavel Petrovich Benkovda faoliyat yuridb kelmoqda xozirgi lavozimi</i>
+            </div>
+        </div>
+        <hr>
+        <div style="margin-top: 10px;height: auto;display: flex;padding: 5px;">
+            <div id="imgadmin">
+                <img src="{% static 'img/farxod.jpg'%}" alt="" style="width: 100%;">
+            </div>
+            <div style="width:60%; margin-left: 10%;text-align: center;">
+            <b id="name"> Маънавий-маърифий ишлари бўйича директор ўринбосари </b><br>
+            <b class="name"><i>Зокиржонов Фарходжон Зокиржон ўғли</i></b><br>
+            <i>Pavel Petrovich Benkovda 09.11.2018 yildan buyon faoliyat yuridb kelmoqda xozirgi lavozimi</i>
+            </div>
+        </div>
+        <hr>
+        <div style="margin-top: 10px;height: auto;display: flex;padding: 5px;">
+            <div id="imgadmin">
+                <img src="{% static 'img/nodir.jpg'%}" alt="" style="width: 100%;">
+            </div>
+            <div style="width:60%; margin-left: 10%;text-align: center;">
+            <b id="name">Ўқув ишлари бўйича директор ўринбосари</b><br>
+            <b class="name"><i>Ражабов Нодирбек Зокирович</i></b><br>
+            <i>Pavel Petrovich Benkovda faoliyat yuridb kelmoqda xozirgi lavozimi</i>
+            </div>
+        </div>
+        <hr>
+        <div style="margin-top: 10px;height: auto;display: flex;padding: 5px;">
+            <div id="imgadmin">
+                <img src="{% static 'img/jasur.jpg'%}" alt="" style="width: 100%;">
+            </div>
+            <div style="width:60%; margin-left: 10%;text-align: center;">
+            <b id="name">Ишлаб чиқариш (амалиёт) ишлари бўйича директор ўринбосари</b><br>
+            <b class="name"><i>Холмухамедов Жасур Ботирович</i></b><br>
+            <i>Pavel Petrovich Benkovda faoliyat yuridb kelmoqda xozirgi lavozimi</i>
+            </div>
+        </div>
+        <hr>
+        <div style="margin-top: 10px;height: auto;display: flex;padding: 5px;">
+            <div id="imgadmin">
+                <img src="{% static 'img/baxtiyor.jpg'%}" alt="" style="width: 100%;">
+            </div>
+            <div style="width:60%; margin-left: 10%;text-align: center;">
+            <b id="name">Хўжалик  ишлари бўйича директор ўринбосари</b><br>
+            <b class="name"><i>Тагаев Бахтиёр Абдугаппарович</i></b><br>
+            <i>Pavel Petrovich Benkovda faoliyat yuridb kelmoqda xozirgi lavozimi</i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

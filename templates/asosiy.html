@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <title>Pavel Petrovich Benkov nomidagi respublika ixtisoslashtrlgan rassomlik maktabi</title>
+    <style>
+    #main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content:center;
+    }
+    .art{
+        width: 230px;
+    }
+
+    .news{
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    .news > #main > .art{
+        margin-left: 20px;
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .fakultet{
+        width: 100%;
+        background-color: rgb(118, 118, 118);
+        padding: 20px 0;
+        text-align: center;
+        background: url("{%static 'photo_2022-02-27_22-45-58.jpg'%}") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .fakultet > #main > .art{
+        color: white;
+        border-radius: 30px;
+    }
+    .fakultet > #main > .art:not(:first-child){
+        margin-left: 20px;
+    }
+    .fakultet > #main > .art > img{
+        border-radius: 30px 0;
+        border: 1px solid white;
+    }
+
+
+
+
+
+    .rahbariyat{
+        width: auto;
+        min-height: 400px;
+        max-height: 600px;
+        padding: 20px;
+        text-align: center;
+        font-size: x-large;
+        background-color: rgb(109, 109, 109);
+        color: white;
+        background: url("{% static '1613278216_40-p-sinii-fon-odnotonnii-temnii-44.jpg'%}") no-repeat center;
+        background-size: cover;
+    }
+    .rahbariyat > div > div > div{
+        background-color: rgb(96, 92, 111);
+        border: 1px solid green;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+        
+    }
+    .rahbariyat > div > div > div:not(:first-child){
+        margin-left: 30px;
+    }
+    .rahbariyat > div > div > div > img{
+        width: 228px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    .tiyps{
+      padding: 30px 0;
+    }
+    .tiyps> div{
+      width: 50%;
+      text-align: center;
+    }
+    #contact{
+        padding-top: 5%;
+        padding-bottom: 10vh;
+        background: url("{% static 'colorful-abstract-text-green-yellow-texture-circle-light-color-leaf-shape-design-line-1920x1200-px-computer-wallpaper-font-Multi-Color-719296.jpg'%}") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+    }
+    .tabel-ct{
+        margin-top: 50px;
+    }
+    .tabel-ct > ul > li{
+        margin: 30px 0;
+    }
+    </style>
+</head>
+<body>
+    {% include 'header.html'%}
+    <div class="news">
+        <b style="font-size: xx-large;">YANGILIKLAR</b></br></br>
+        <div id="main" class="container" style="width: 90%;">
+            <div class="art" style="width: 30%;"><img src="{%static 'photo_2022-03-01_17-14-46.jpg'%}" alt="" style="width: 100%;">
+                <div>
+                    <br>
+                    <b style="font-size: 18px; ">Малака ошириш маркази очилди</b><hr>
+                    <p>
+                        Бугун,1 март куни Ўзбекистон Бадиий академиясига қарашли Павел Беньков номидаги  Республика ихтисослаштирилган рассомлик мактабида Бадиий таълим йўналишларида педагог ва мутахассис кадрларни қайта тайёрлаш ҳамда уларнинг малакасини ошириш марказининг тантанали очилиш маросими бўлиб ўтди.  
+
+Тадбирда Ўзбекистон Бадиий академияси мутасаддилари, академиклар, рассом, профессор-ўқитувчилар ҳамда кенг жамоатчилик вакиллари иштирок этди.
+                    </p>
+                </div>
+            </div>
+            <div class="art" style="width: 30%;"><img src="{%static 'photo_2022-03-01_18-39-43.jpg'%}" alt=""style="width: 100%;">
+                <div>
+                    <br>
+                    <b style="font-size: 18px;">Бадиий таълим йўналишларида педагог ва мутахассис кадрларни қайта тайёрлаш ҳамда уларнинг малакасини ошириш маркази директори Даврон Шукуров:</b><hr>
+                    <p>Марказ бугундан (1 мартдан) илк бор  ўз тингловчиларини қабул қилмоқда. 2022 йилда Олий таълим бўйича 36 нафар, Ихтисослаштирилган санъат ва маданият мактаблари ҳамда мактаб-интернатлари бўйича 177 нафар, Болалар мусиқа ва санъат мактаблари бўйича 300 нафар, жами 513 нафар педагог кадрларнинг малакасини ошириш режалаштирилган.</p>
+                </div>
+            </div>
+            <div class="art" style="width: 30%;"><img src="{%static 'photo_2022-02-27_23-08-04.jpg'%}" alt=""style="width: 100%;">
+                <div>
+                    <br>
+                    <b style="font-size: 18px;">Toshhujayeva Kamila Bexzod qizining shaxsiy ko‘rgazmasi ochildi.</b><hr>
+                    <p>Poytaxtimizdagi Yoshlar ijod saroyida O‘zbekiston Badiiy akademiyasi Pavel Benkov nomidagi Respublika ixtisoslashtirilgan rassomlik maktabining iqtidorli o‘quvchilaridan biri, 11-sinf dastgoxli rangtasvir yo`nalishida taxsil oluvchi Toshhujayeva Kamila Bexzod qizining shaxsiy ko‘rgazmasi ochildi.</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="fakultet">
+        <b style="font-size: xx-large; color: white;">Yo'nalishlar</b></br></br>
+        <div id="main" class="container" style="width: 90%;">
+            <div class="art" style="width: 30%;"><img src="{%static 'img/unnamed.jpg'%}" alt="" style="width: 100%;">
+                <div>
+                    <b style="font-size: x-large;">Dasgohliy rangtasvir rassomi</b><hr>
+                    <p>
+                        Asarlari mustaqil ahamiyatga ega bo'lib, atrof — muhitdan qat'i nazar.  Dastgohli bo'yoqning asosiy materiallari-yog', temperatura va akvarel bo'yoqlari, gouache, pastel, akril hisoblanadi.
+                    </p>
+                </div>
+            </div>
+            <div class="art" style="width: 30%;"><img src="{%static 'img/7039781_8_0_1059_594_1920x0_80_0_0_7944c0dcbef7aeadc5c3e5a1b688e4be.jpg'%}" alt=""style="width: 100%;">
+                <div>
+                    <b style="font-size: x-large;">Haykaltarosh</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos amet quia architecto odit. Amet asperiores cupiditate quae explicabo provident fugit nostrum, voluptatem sed! Minima, esse tenetur? Dolor, itaque recusandae?</p>
+                </div>
+            </div>
+            <div class="art" style="width: 30%;"><img src="{%static 'img/unnamed (3).jpg'%}" alt=""style="width: 100%;">
+                <div>
+                    <b style="font-size: x-large;">Teatr san'ati butaforia rassomi</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloremque reiciendis modi vel possimus iure rerum odit ut, repudiandae, suscipit ex soluta eos libero ad commodi et voluptatem. Esse, quod?</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="rahbariyat ">
+        <div class="container">
+            <p style="margin-top: 20px;"><b>Rahbariyat</b></p>
+
+            <div class="container"id="main" style="text-align: center;">
+                <div class="art" ><img src="{% static 'img/umid.jpg'%}" alt="">Xakimov Umedjan Bahadirovich</br></br><b style="font-size: 25px; margin-top: 25px;">Direktor</b></div>
+                <div class="art" ><img src="{% static 'img/farxod.jpg'%}" alt="">Зокиржонов Фарходжон Зокиржон ўғли</br></br><b style="font-size: 17px; margin-top: 25px;">Маънавий-маърифий ишлари бўйича директор ўринбосари</b></div>
+                <div class="art" ><img src="{% static 'img/nodir.jpg'%}" alt="">Ражабов Нодирбек Зокирович</br></br><b style="font-size: 17px; margin-top: 25px;">Ўқув ишлари бўйича директор ўринбосари</b></div>
+                <div class="art" ><img src="{% static 'img/jasur.jpg'%}" alt="">Холмухамедов Жасур Ботирович</br></br><b style="font-size: 17px; margin-top: 25px;">Ишлаб чиқариш (амалиёт) ишлари бўйича директор ўринбосари</b></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 80%; margin: 30px auto;border-radius: 20px;">
+        <div style="text-align: center;">
+            <label for="" style="font-size: x-large;">INSTITUTIMIZ HAQIDA</label>
+        </div>
+        <div style="display: flex;justify-content: center;" class="tiyps">
+          <div>
+            <td>Maktab Maydoni</td><br><hr>
+            <b style="font-size:30px;">25 663 m<sup>2</sup></b>
+          </div>
+          <div>
+            <td>Bo'limlar</td><br><hr>
+            <b style="font-size:30px;">3</b>
+          </div>
+          <div>
+            <td >Yo'nalishlar</td><br><hr>
+            <b style="font-size:30px;">15</b>
+          </div>
+          <div>
+            <td >O'quvchilar</td><br><hr>
+            <b style="font-size:30px;">1 101</b>
+          </div>
+          <div>
+            <td >O'qtuvchilar</td><br><hr>
+            <b style="font-size:30px;">154</b>
+          </div>
+        </div>
+        
+    </div>
+
+    <div id="contact" >
+        <div class="row container" style="border: 2 px solid white; margin: auto;">
+            <div  style="background-color: white;color: black;border-radius: 30px;height: auto; margin-right: 20px;" class="col">
+                <div style="margin-top: 30px; text-align: center;">
+                    <label for="" style="font-size: x-large;"><b>Qabulxona</b></label>
+                    <div class="row"style="margin-top: 20px;">
+                        <div class="col" >
+                          <input type="text" class="form-control" placeholder="Ismingiz" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Emailingiz" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-5">
+                        <textarea class="form-control " id="validationTextarea" placeholder="Murojatingiz" required></textarea>
+                        <button class="btn btn-primary btn-lg container mt-5">Jo'natish</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: left; border: 5px solid white; padding-top: 30px; max-width: 400px; border-radius: 30px;" class="col" >
+                <div class="tabel-ct">
+                    <ul>
+                        <li><b style="color: blue;">Telefon raqamimiz</b></br><p style="margin: 20px auto; font-size: larger;">+998 (71) 245-05-56</p></li>
+                        <li><b style="color: blue;">Email manzilimiz</b></br><p style="margin: 20px auto; font-size: larger;">info@benkov.uz</p></li>
+                        <li><b style="color: blue;">Manzilimiz</b></br><p style="margin: 20px auto; font-size: larger;">Toshkent shahar Shoyhontohur tumani Furqat ko'chasi 6-uy</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a href=""><div class="container" style="height: 200px; width: auto; margin-top: 30px;border-radius: 30px;text-align: center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7127.322268233741!2d69.23965425666124!3d41.316044833166046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0aecbd339f%3A0x2668254809f88b61!2z0KXRg9C00L7QttC10YHRgtCy0LXQvdC90YvQuSDQutC-0LvQu9C10LTQtg!5e0!3m2!1sru!2s!4v1645903983267!5m2!1sru!2s" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div></a>
+    </div>
+   
+    
+</body>
+</html>

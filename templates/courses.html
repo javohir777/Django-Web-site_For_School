@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo'nalishlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #sotset{
+        width: 20%;
+        float: right;
+      }
+      #sotset >a >img{
+        width: 90%;
+        margin-left: 10%;
+      }
+        #courses{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+        }
+        #courses li img{
+            width: 90%;
+            border-radius: 10px;
+        }
+        #courses> li{
+            width: 40%;
+            display: inline;
+            text-align: center;
+            margin-top: 10vh;
+            margin-left: 5%;
+            align-items: stretch;
+            justify-content:center;
+        }
+        #courses>li>a{
+            text-decoration: none;
+            color: black;
+        }
+        #courses>li b{
+            font-size: 25px;
+            font-family: 'Cinzel', serif;
+        }
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        .courses{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #cursor {
+            overflow: hidden;
+            position: fixed;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 600px){
+            .container{
+                width: 100%;
+            }
+            #courses> li{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+            ol, ul {
+                padding-left: 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'dizayn/header.css'%}">
+</head>
+<body>
+{% include 'header.html'%}
+<div class="container">
+    <ul id="courses">
+        <li>
+            <a href="#">
+                <div ><img src="{%static 'img/unnamed.jpg'%}" alt="" ></div>
+                <div>
+                    <b>Dasgohliy rangtasvir rassomi</b><hr>
+                    <p>
+                        Asarlari mustaqil ahamiyatga ega bo'lib, atrof — muhitdan qat'i nazar.  Dastgohli bo'yoqning asosiy materiallari-yog', temperatura va akvarel bo'yoqlari, gouache, pastel, akril hisoblanadi.
+                    </p>
+
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                    <div><img src="{%static 'img/unnamed (1).jpg'%}" alt=""></div>
+                <div>
+                    <b>Mahobatli rangtasvir rassomi</b><hr>
+                    <p>
+                        Mahobatli rangtasvir asarini uzoq saqlanishiga rassom ham, arxitektor ham, quruvchi ham birday javobgardir. Shuning uchun ashyoda har doim sinovlar o‘tkazishda ilmiy tekshirish institutlarini jalb qilinishi mumkin. Har doim yangi - yangi ashyolar dunyoga kelmoqda. Ashyoning fizik, kimyoviy xossalarini olimlar etarli darajada aniqlagan boMsalar, rassomlar esa uning estetik tomonini badiiy asar yaratishda sinab ko‘radi va aniqlaydi
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/unnamed (2).jpg'%}" alt=""></div>
+                <div>
+                    <b>Qayta tiklash rassomi</b><hr>
+                    <p>
+                        Qayta tiklash rassomi-tarixiy va madaniy me'ros ob'ektlarini muhofaza qilish va tiklash bo'yicha mutaxassis(tasviriy va dekorativsan'athamdame'morchilikasarlari).Qayta tiklash rassomining faoliyati ikki yo'nalishdan iborat. Birinchisi - bu qayta tiklash, ya’ni buyumni birinchi holatiga qaytarish. Ikkinchisi- konservaciyalash, buyumlarni muzeylarda tiklash ham deyiladi. Konservaciyalashning maqsadi — tarixiy ob’yektni saqlab qolish. Buyumning qandayligiga qarab "ta'mirlash" kerak, tiklashnimg bir necha asosiy turlarini aniqlash
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/a00e0d8421497c61ea7bb15ce17a6598.jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr liboslari san'ati rassomi</b><hr>
+                    <p>
+                        Teatr liboslari san'ati rassomi – Liboslar rassomi postanovkachi rassom (stenograf) boshqaradigan film yoki spektakl san’at guruhi tarkibiga kiradi. Barcha liboslar film yoki spektaklning umumtasviriy yechimlariga asoslanadi. Shuning uchun loyiha ustida ishlash sahna asarining stenariysini o’qishdan boshlanadi va har bir timsol birma-bir ishlab chiqiladi. Qahramon libosi uning qaysi kasb egasi ekanligini, ijtimoiy tabaqasi, yoshi, individualligini ochib beradi. Libosni yaratish – timsol yaratishning bir qismidir. Liboslar rassomi rejissor, postanovkachi-rassom, grimchi bilan birgalikda ishlayd...
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/interesting_201712190402430.jpg'%}" alt=""></div>
+                <div>
+                    <b>Grimchi-rassom</b><hr>
+                    <P>
+                        Liboslar rassomi rejissor, postanovkachi-rassom, grimchi bilan birgalikda ishlaydilar. Shu bilan birga aktyorlar bilan ham ishlagan holda, har bir libos qahramon timsoliga mos kelishiga ko’maklashishi kerak. Kasb tarixi. Teatr san'ati qadim Yunonistonda vujudga kelgan. Teatr haqida birinchi eslatmalar e.av.534 yil bilan bog’liq. Teatr va umumsan’atning takomillashishi kasbning rivojlanishiga ta’sir ko’rsatgan. 18 asrlarda libos rassomlari uchun birinchi o’quv kurslari ochilgan. 
+                    </P>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/unnamed (3).jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr san'ati butaforia rassomi</b><hr>
+                    <p>
+                        Teatr san'atining kelib chiqishi odatda klassik davr deb ataladi, standart va model sifatida qabul qilinadi. Qadimgi yunon teatrining o'zi noldan chiqmagan. Ko'plab yillar davomida mamlakat madaniy hayotidagi eng muhim voqealardan biri xudo Dionisga bag'ishlangan bayram edi. ... Qadimgi yunoncha o'yinning qahramonining paydo bo'lishining asosi sahnada o'ynagan odamga taqilgan maska, shuningdek, parik edi. Bu uning asosiy his-tuyg'ulari va tajribalarini etkazib beradigan maska edi, tomoshabinga ijobiy xususiyat va salbiy farqni ajratishga imkon berdi va hokazo. Qadimgi yunon teatri butun Yevropa teatri san'atini rivojlantirish uchun asos yaratdi. Zamonaviy teatrda ham asosiy tamoyillar, ham arxitektura, ham aktyorlarning o'yinlarida kuzatiladi
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/1481604.jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr sahna bezagi rangtasvir rassomi</b><hr>
+                    <p>
+                        Rang-ba-rang va turli xilda bo‘yalgan mato bo‘laklaridan foy-dalanib, rassomlar rangtasvir ishlangan orqa pardalar, kulislarga applikatsiya yopishtirmoqdalar. Ularni mah-kamlash uchun faqat ipdan emas, balki matolarni tez, ishonchli yopishishi uchun polivinilatsetat emulsiyasi-dan (PVA-emulsiya) foydalanmoqdalar PVA-emulsiyasi va baliq yelimi qurigach, shaffof bo‘lib qoladi, matoda hech qanday dog‘ qoldirmaydi. ... Teatr rassomlarining kuchi bilan ko‘p yillar davo-mida sahna yuzasi va yoritgichlari, bezaklar harakati va sahnani tamosha zali bilan tutashtirish, rassomlar va bezakchilarning sahnalashtirish vositalarini boyituv-chi turli materiallardan foydalanish yo‘llari qidirib to-pilmoqda.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/applied-arts-museum6.jpg'%}" alt=""></div>
+                <div>
+                    <b>Mahobatli bezak San'ati rassomi</b><hr>
+                    <p>
+                        Arxitekturada mahobatli bezak san’ati ashyo va texnikasi rang - barangligi bilan ajralib turadi. Ulardan ba’zilari; freska, temperali rangtasvir (rospis), mozaika, enkaustika, sgraffito, rang -barang vitraj rangtasviri eng qadimiy turlardan hisoblanib, o‘zining an’anaviy va zamonaviy usullari shakllanib bormoqda. ... Arxitekturada mahobatli rangtasvir asari uzoq muddatga mo‘ljallangan bo‘lib, uning iqlimi, texnologiyasini rassom puxta o‘ylab bajarishi lozim bo‘ladi. Bu jarayonga jiddiy e’tibor berish zarur. Aks holda asar tez nobud bo‘lishi mumkin. Mahobatli rangtasvir asarini uzoq saqlanishiga rassom ham, arxitektor ham, quruvchi ham birday javobgardir. Shuning uchun ashyoda har doim sinovlar o‘tkazishda ilmiy tekshirish institutlarini jalb qilinishi mumkin. 
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/97093efe6a61c60644b6970668bfdd530513.jpg'%}" alt=""></div>
+                <div>
+                    <b>Kino va televideniye rassomi</b><hr>
+                    <p>
+                        Televideniye va kino san’atida foydalaniladigan yoritish asboblarining turlarini topish va ularning vazifalarini bilib kelish. Rejissor va rassom mahorati. Rejissurada rassom bilan ishlash eng muhim jihatlardan biri hisoblanadi. Ma’lumki, rassomchilik san’ati ko‘p asrlik tarixga, juda katta boy madaniy va ma’naviy merosga ega.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/12 (2).jpg'%}" alt=""></div>
+                <div>
+                    <b>Grafika rassomi</b><hr>
+                    <p>
+                        Grafika rassomlari gildiyasi o'z tarixining aksariyat qismida mustaqil uyushma bo'lib, rassomlar uchun birinchi jamoaviy shartnomani muzokaralar olib bordi. ... Ostida 1986 yilgi soliq islohoti to'g'risidagi qonun, yozuvchilar va rassomlarga xarajatlarni ushlab qolish taqiqlandi, ular ushbu xarajatlar uchun daromadni yozib qo'ygan yili bundan mustasno. Grafika rassomlari gildiyasi va boshqa 44 nafar rassomlar guruhi ushbu moddani 1988 yilda bekor qilish uchun muvaffaqiyatli ravishda lobbilar.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/russkaya_lakovaya_miniatyura_.jpg'%}" alt=""></div>
+                <div>
+                    <b>Lakli miniatura rassomi</b><hr>
+                    <p>
+                        Lakli miniatura san’ati. 0‘zbek xalqining eng nafis ijod turlaridan biridir. Manbalarga ko‘ra, surat solingan lakli qutichalar dastlab XVI asrda Buxoroda yasalgan ekan. ... Sharq miniatura san’atida yetakchi va betakror maktab yaratgan buyuk rassom hayoti va faoliyatini o'rganish o‘zligini qayta tiklayotgan xalq uchun har qachongidan ham ko‘ra muhimroq ahamiyat kasb etayapti. XIV-XV asrlar o‘zbek xalqi tarixining oltin sahifalaridan desak, yanglishmaymiz.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/7039781_8_0_1059_594_1920x0_80_0_0_7944c0dcbef7aeadc5c3e5a1b688e4be.jpg'%}" alt=""></div>
+                <div>
+                    <b>Haykaltarosh</b><hr>
+                    <p>
+                        Haykaltaroshlik - tasviriy sanat turi; borliqni hajmli shakllarda, makonda uch oʻlchamda tasvirlashga asoslanadi. Tasvir obʼyekti, asosan, inson; shuningdek, hayvonlar (anima-listika), tabiat (manzara) va narsalar (natyurmort). H.ning 2 asosiy koʻrinishi — aylanib kuzatish imkonini beruvchi dumaloq haykal hamda faqat bir tomondan koʻrishga moʻljallangan boʻrtma (qabariq) tasvir relyef turi farqlanadi. Relyef, oʻz navbatida, yuzaga nisbatan bir oz boʻrttirib ishlanadigan barelyef hamda tasvir yuzaga... 
+
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/7979_html_m352e707e.jpg'%}" alt=""></div>
+                <div>
+                    <b>Naqqoshlik bo'yicha usta-rassom</b><hr>
+                    <p>
+                        Naqqoshlik, naqshkorlik — amaliy sanʼatning qad. sohasi; naqsh yaratish kasbi. Naqqosh usta qogʻozga yoki matoga naqsh mujassamotini yoki naqsh taqsimini chizib oladi (ayniqsa, girih va islimiy kabi murakkab naqshlarda), axta, andoza tayyorlaydi. Amaliy sanʼat ustalari 2 xil usulda bezak yaratadilar: naqqoshlar tayyorlagan axta, andoza yordamida hamda naqsh (gul) toʻgʻridan-toʻgʻri bezash jarayoni-daustalar tasavvurining mahsuli si-fatida yaratiladi. N.da naqsh, bezakni malakali naqqosh ustalar chizib...
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/16_0.jpg'%}" alt=""></div>
+                <div>
+                    <b>Yog'och o'ymakorlik bo'yicha usta-rassom</b><hr>
+                    <p>
+                        Yogʻoch oʻymakorligi — oʻymakorlik turi, badiiy hunarmandlikning qad. va keng tarqalgan sohasi. Yogʻochni kesib, oʻyib, chizib, zaminni teshib naqsh, boʻrtma shakllar hosil qilib, yogʻoch taxtacha va boʻlaklarini birbiriga ulab, yopishtirib (asosan panjaradya) handasiy shakllar, oʻsimliksimon tasvirlar, islimiy naqshlar hosil qilinadi. Us t a naqshni bezatiladigan sirtga axta vositasida tushiradi, ustidan naqsh chiziqlari chizib chiqiladi, soʻng asbob (iskana)lar yordamida oʻyiladi. Oʻyishda turli..
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/292795.jpg'%}" alt=""></div>
+                <div>
+                    <b>zargarlik buyumlari usta-rassom</b><hr>
+                    <p>
+                        Zargarlik buyumlari yoki zargarlik buyumlari (Amerika ingliz tili; imlo farqlarini ko'ring) shaxsiy uchun kiyiladigan bezak buyumlaridan iborat bezak, kabi broshyuralar, uzuklar, marjonlarni, sirg'a, marjonlarni, bilakuzuklarva zanjirlar. Zargarlik buyumlari tanaga yoki kiyimga yopishtirilgan bo'lishi mumkin. G'arb nuqtai nazaridan ushbu atama bardoshli bilan cheklangan bezaklar, masalan, gullarni hisobga olmaganda. 
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

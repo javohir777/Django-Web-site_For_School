@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yangiliklar</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <style>
+    #sotset{
+        width: 20%;
+        float: right;
+      }
+      #sotset >a >img{
+        width: 90%;
+        margin-left: 10%;
+      }
+        .news{
+            display: flex;
+            justify-content: center;
+        }
+        .news> div:first-child{
+            width: 40%;
+        }
+        .news> div:not(:first-child){
+            width: 60%;
+        }
+        .news  b:nth-child(1){
+            font-size: 30px;
+        }
+        .news  i:not(:first-child){
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 600px){
+            .news{
+            display: block;
+            text-align: center;
+            }
+            .news  b:nth-child(1){
+                font-size: 14px;
+                margin:0;
+                padding: 0;
+
+            }
+            .news  i:not(:first-child){
+                margin-top: -30px;
+                font-size: 10px;
+                text-align: left;
+                margin-top:-20px;
+                padding: 0;
+                float: left;
+            }
+            .news  b:not(:first-child){
+                font-size: 10px;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                float: left;
+                margin-top: -20px;
+            }
+            .container{
+                width: 100%;
+            }
+            .news> div:first-child{
+            width: 100%;
+
+            }
+            .news> div:not(:first-child){
+                width: 100%;
+            }
+            hr:nth-child(5){
+                display: none;
+            }
+            hr:nth-child(8){
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+<body >
+    {% include 'header.html'%}
+    <div class="container" style="margin-bottom: 100px;">
+        <a>
+            {%for new in News%}
+            <div class="news">
+                <div>
+                    <img style="height: auto; width: 90%;max-height: 400px;" src="/admin{{new.imageUrl}}">
+                </div>
+                <div>
+                    <b >{{new.name}}</b><br>
+                    <i >{{new.data}}</i><br><hr>
+                    <b >{{new.description}}</b><br>
+                    <i >{{new.info}}</i>
+
+                </div>
+                
+            </div>
+            <hr>
+            {%empty%}
+            <div class="row" style="width: 90%; height: 10vh;margin-left: auto;margin-right: auto;border-radius: 20px; background-color: white;">Hech qanaqa malumot yuq</div>
+            {%endfor%}
+        </a>
+    </div>
+</body>
+</html>

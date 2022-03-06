@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .up > ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .up > ul > li{
+            padding: 0 10px;
+            padding-top: 15px;
+            border-right: 2px solid #c3c3c3;
+        }
+        .up > ul> li:hover{
+            transition: 0.5s;
+            background-color: #c3c3c3;
+        }
+        .up > ul > li:first-child{
+            border-left: 2px solid #c3c3c3;
+        }
+        .up > ul > li > a > img{
+            width: 30px;
+        }
+        .icon {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .sotset {
+            width: 20%;
+            height: auto;
+            margin-left: auto;
+            display: flex;
+        }
+        .sotset > a > img{
+            width: 100%;
+        }
+        .panel {
+            width: 80%;
+            margin: 30px auto;
+            z-index: 999;
+        }
+        .panel > ul{
+            display: flex;
+            justify-content: center;
+            height: 5vh;
+        }
+        .panel > ul > li{
+            list-style: none;
+            width: 15%;
+            padding: 10px;
+            text-align: center;
+            border-left:2px solid #c3c3c3;
+            border-right:2px solid #c3c3c3;
+        }
+        /*.panel > ul > li:first-child{*/
+        /*    border-left: none;*/
+        /*}*/
+        .panel > ul > li:not(:first-child){
+            border-left: none;
+        }
+
+        .panel > ul > li:hover{
+            transition: 0.3s;
+            color: white;
+        }
+        .panel > ul > li:hover .plus> li{
+            display: block;
+        }
+        .panel > ul > li > a{
+            text-decoration: none;
+            color: black;
+        }
+        .panel > ul > li:hover > a{
+            transition: 0.2s;
+            color: yellowgreen;
+        }
+        .panel > ul > li > a > div{
+            margin-top: -20px;
+            margin-left: 10px;
+            width: 20px;
+        }
+        .panel > ul > li:hover > a > div{
+            margin-top: -20px;
+            position: relative;
+            transform: rotate(90deg) ;
+            transition: 0.2s;
+        }
+        .plus{
+            background-color: #c3c3c3;
+            margin-left: -10px;
+            margin-top: -8px;
+            width: 112%;
+            position: relative;
+        }
+        .plus > li{
+            list-style: none;
+            margin: 7px 0;
+            margin-left: -32px;
+            padding: 20px 0;
+            width: 125%;
+            display: none;
+        }
+        .plus > li:hover{
+            transition: 0.5s;
+            background-color: #3f3e3e;
+        }
+        .plus > li > ul{
+            position: absolute;
+            width: 200px;
+            margin-top: -20px;
+            margin-left: 8%;
+            display: none;
+        }
+        .plus > li > ul > li{
+            color: black;
+            background-color: #c3c3c3;
+            padding: 20px;
+            list-style: none;
+        }
+        .plus > li > ul > li:hover{
+            background-color: #3f3e3e;
+            color: white;
+            transition: 0.5s;
+        }
+        .plus > li:hover > ul{
+            display: inline;
+        }
+        .plus > li:hover > a{
+            color: white;
+
+        }
+        .plus > li >a{
+            text-decoration: none;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <div class="up">
+            <ul >
+                <li><a href="/bayroq"><img src="{%static 'img/uzbekistan-flag_1024x1024.jpeg'%}" alt=""></a></li>
+                <li><a href="/"><img src="{%static 'img/6f25ce86464302d4c7195-removebg-preview.png'%}" alt=""></a></li>
+                <li><a href="/"><img src="{%static 'img/unnamed__1_-removebg-preview.png'%}" alt=""></a></li>
+                <li><a href="https://t.me/benkovmaktabi"><img src="{%static 'img/2-removebg-preview-removebg-preview.png'%}" alt=""></a></li>
+                <li><a href="https://www.instagram.com/p_benkov/"><img src="{%static 'img/5af2b7f45ec78.png'%}" alt=""></a></li>
+                <li><a href="tel: +998712450556" style="color: black;text-decoration: none;">(71) 245-05-56</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="{%static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}" alt="" style="width: 250px;">
+            <p style="font-size: 30px;">Pavel Petrovich Benkov nomidagi<br>respublika ixtisoslashtrlgan rassomlik maktabi</p>
+        </div>
+        <!-- <div >
+            <b style="color: #7A7A7A;float: right;">Ish vaqti:<i style="color: black;"> 8:00/16:00</i></b><br>
+            <b style="color: #a89d9d;float: right;">Call center telefon raqamlari:<b style="color: black;">  (71) 245-05-56; (71) 245-07-65;</b></b><br>
+
+        </div> -->
+    </div>
+
+    <div class="panel">
+        <ul>
+            <!-- <li><a href="#">NAVBAR</a></li> -->
+            <li><a href="/">Asosiy</a></li>
+            <li><a href="/courses">Yo'nalishlar</a></li>
+            <li><a href="#">Malumotlar</a></li>
+            <li><a href="/news" >Yangiliklar <div>❯</div></a>
+                <ul class="plus">
+                    <li><a href="/news">Yangiliklar</a></li>
+                    <li><a href="/contest">Konkurslar</a></li>
+                    <li><a href="#">Natijalar   ❯</a>
+                        <ul>
+                            <li>imthon natijalar</li>
+                            <li>Konkurslar natijalari</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/raxbarlar">Rahbarlar</a></li>
+            <li><a href="/contact">Kontaktlar</a></li>
+        </ul>
+    </div>
+</body>
+</html>
